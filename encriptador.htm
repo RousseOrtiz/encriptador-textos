@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="encriptado">
+                <textarea class="area-encriptado" name="area-encriptado" id="area-encriptado" cols="30" rows="10" placeholder="Ingrese el texto a encriptar"></textarea>
+            </div>
+            <div class="reglas">
+                <ul class="lista-reglas">
+                    <li>Ingrese unicamente letras minúsculas</li>
+                    <li>No se pueden utilizar acentos ni caracteres especiales</li>
+                </ul>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="desencriptar" value="Desencriptar" onclick="desencriptar()">
+                <input type="button" class="copiar" value="Copiar Texto" onclick="copiar()">
+            </div>
+        
+            <div class="encriptador">
+                <img src="imagenes/Muñeco.png" alt="munieco" id="munieco">
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">No se encontro ningún mensaje</h2>
+                    <p id="parrafo">Ingrese texto a Encriptar o Desencriptar</p>
+                </div>
+            </div>
+        </div>   
+        <footer>
+            <img class="perfil" src="imagenes/perfiil.jpg" alt="perfil">
+            <p>Rosa Isela Ortiz Guzmán</p>
+            <a href="https://www.linkedin.com/in/rosa-ortiz-b35a5a103/">LinkedIn</a><br>
+            <a href="https://github.com/RousseOrtiz">GitHub</a>
+        </footer> 
+    </body>
+    <script src="funciones.js"></script>
+</html>
